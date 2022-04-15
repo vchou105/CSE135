@@ -1,6 +1,6 @@
 # Members
-Evan Liu
-Vicky Chou
+* Evan Liu
+* Vicky Chou
 
 # Main Site
 https://cse135-cl.site
@@ -17,7 +17,12 @@ Part 2:
 
     GitHub Deployment Setup
 
-        To avoid the need to live edit our code, we configured our local and remote machines to allow us to simultaneously push our local code to the remote Apache server as well as the online GitHub cloud. To do this, we first made a bare clone of the repository on GitHub, and then we created a GitHub hook that, when exectued, forcefully overwrites the contents of our local website-related files with their counterparts found on the online repository. Then, we added the location of the cloned bare repository as a Git remote repo on our local devices, as well as the online GitHub repository. Then, after adding edited files to our local Git branch, commiting them and pushing them afterwards, the Git hook on our remote devices runs and syncs the pushed files with our online repository and our server-based ones.
+        To avoid the need to live edit our code, we configured our local and remote machines to allow us to simultaneously push our local code to the remote Apache server as well as the online GitHub cloud.
+        1. We made a Github repository and added the public ssh key as a deploy key.
+        2. Then we made a bare clone of the Github repository on the remote server
+        3. Created a GitHub hook that, when exectued, forcefully overwrites the contents of our local website-related files with their counterparts found on the online repository.
+        4. Added the location of the bare repository (on the remote server) and the online GitHub repository as a Git remote repo on our local devices. 
+        5. After adding edited files to our local Git branch, commiting them and pushing them afterwards, the Git hook on our remote devices runs and syncs the pushed files with our online repository and our server-based ones.
 
 Part 3:
 
