@@ -24,6 +24,8 @@ Part 2:
         4. Added the location of the bare repository (on the remote server) and the online GitHub repository as a Git remote repo on our local devices. 
         5. After adding edited files to our local Git branch, commiting them and pushing them afterwards, the Git hook on our remote devices runs and syncs the pushed files with our online repository and our server-based ones.
 
+<img src="https://github.com/vchou105/CSE135/blob/main/GitHub_Deploy.gif"></br>
+
 Part 3:
 
     Step 4: Employ Password Protection
@@ -33,7 +35,7 @@ Part 3:
             Username: grader
             Password: cse135grader
 
-        Grader Apache (Sudo) Login Information:
+        Grader Apache Login Information:
 
             Username: grader
             Password: grader
@@ -54,3 +56,4 @@ Part 3:
             </IfModule>
 
         Inherently, these lines serve the purpose of changing the default Apache server signature, which displays the version of Apache being run and relevant Port information, to a different specified signature, in our cases "CSE135 Server".
+
